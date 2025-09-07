@@ -60,7 +60,6 @@ def countingSort(arr):
     n = len(arr)
     maxx =  max(arr)
     myarray = [0] * (maxx+1)
-
     for i in range(n):
         val = arr[i]
         myarray[val] +=1
@@ -71,7 +70,7 @@ def countingSort(arr):
             myarray[j] -= 1
     return arr
 
-# print(countingSort([7,6,4,4,4,5,9]))
+print(countingSort([7,6,4,4,44,5,9]))
 # RadixSort
 # Taking the max elem and go from one to 100 th place
 # make it in ascending
@@ -118,7 +117,7 @@ def RadixSort(arr):
 
     return arr
 
-print(RadixSort([3564,44,33,22,45,11,13]))
+# print(RadixSort([3564,44,33,22,45,11,13]))
 def TwoSum(arr):
     return arr
 def mergerSort(arr):

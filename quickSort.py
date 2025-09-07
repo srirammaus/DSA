@@ -17,4 +17,4 @@ def quickSort (arr):
     right = quickSort(right)
     return left + [p] + right
 
-print(quickSort([4,13,3,2,12,5,-1]))
+print(quickSort([4,13,3,3,2,12,5,-1]))

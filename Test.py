@@ -137,3 +137,6 @@ print("\nAfter insertion:")
 traverseAndPrint(node1)
 
 # Python
+
+arr = [1,2,3,4]
+print (arr[:-1])
