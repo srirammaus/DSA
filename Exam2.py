@@ -46,7 +46,6 @@ def merge_sort(arr):
     # divide the arr
     mid = n//2
 
-
     left = merge_sort(arr[:mid])
     right = merge_sort(arr[mid:])
 
@@ -118,7 +117,20 @@ def DualRecursion(arr):
     return left
 # DualRecursionarr = [10,9,8,7,6,1,4,3, 2, 5]
 # DualRecursion(DualRecursionarr)
+def Recursion(arr):
+    n = len(arr)
+    if(len(arr) <= 1):
+        return arr
 
+    p = n // 2
+
+    left = [x for x in arr[:-1] if x < p]
+    print(left)
+    Recursion(left)
+
+    return left
+
+Recursion([3,4,1,2])
 # using the elements place
 # quotient - upper part , dividend - inner value , divsor - side value , remarider  - below value
 def radixSort(arr):
