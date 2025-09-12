@@ -126,17 +126,22 @@ node3.next = node4
 
 node5 = Node(11)
 
-print("Original list:")
-traverseAndPrint(node1)
+# print("Original list:")
+# traverseAndPrint(node1)
 
 # Insert a new node with value 97 at position 2
 newNode = Node(97)
 node1 = insertNodeAtPosition(node1, newNode, 5)
 
-print("\nAfter insertion:")
-traverseAndPrint(node1)
+# print("\nAfter insertion:")
+# traverseAndPrint(node1)
 
 # Python
 
-arr = [1,2,3,4]
-print (arr[:-1])
+# arr = [1,2,3,4]
+# print (arr[:-1])
+
+for i in range(5):
+    if i == 3:
+        pass
+    print(i)

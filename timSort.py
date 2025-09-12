@@ -21,7 +21,7 @@ def calcMinRun(n):
     print(n)
     while n >= MIN_MERGE:
         r |= n & 1
-        print("This n , r size", n , r)
+        # print("This n , r size", n , r)
         n >>= 1
     return n + r
 
@@ -81,11 +81,8 @@ def merge(arr, l, m, r):
 def timSort(arr):
     n = len(arr)
     minRun = calcMinRun(n)
-    print(minRun)
     # Sort individual subarrays of size RUN
     for start in range(0, n, minRun):
-        if(start == 510):
-            print(arr)
         end = min(start + minRun - 1, n - 1)
         insertionSort(arr, start, end)
 
@@ -99,6 +96,7 @@ def timSort(arr):
         # and arr[left+size, left+2*size-1]
         # After every merge, we increase left by 2*size
         for left in range(0, n, 2 * size):
+            print(str(size) + "size")
 
             # Find ending point of left sub array
             # mid+1 is starting point of right sub array
