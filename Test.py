@@ -141,7 +141,4 @@ node1 = insertNodeAtPosition(node1, newNode, 5)
 # arr = [1,2,3,4]
 # print (arr[:-1])
 
-for i in range(5):
-    if i == 3:
-        pass
-    print(i)
+print (0 ** 3)
