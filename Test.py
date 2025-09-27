@@ -131,7 +131,7 @@ node5 = Node(11)
 
 # Insert a new node with value 97 at position 2
 newNode = Node(97)
-node1 = insertNodeAtPosition(node1, newNode, 5)
+# node1 = insertNodeAtPosition(node1, newNode, 5)
 
 # print("\nAfter insertion:")
 # traverseAndPrint(node1)
@@ -141,4 +141,9 @@ node1 = insertNodeAtPosition(node1, newNode, 5)
 # arr = [1,2,3,4]
 # print (arr[:-1])
 
-print (0 ** 3)
+# print (0 ** 3)
+
+v = False
+
+if not v:
+    print("This is not a vertex")
