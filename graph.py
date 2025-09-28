@@ -69,6 +69,6 @@ g.add_edge(1, 5)  # B - F
 
 g.print_graph()
 
-# g.dfs("D")
-g.bfs("D")
+g.dfs("D")
+# g.bfs("D")
 
